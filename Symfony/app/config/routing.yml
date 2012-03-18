@@ -1,0 +1,9 @@
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+_say:
+    resource: "@AcmeDemoBundle/Controller/SayController.php"
+    type:     annotation
+    prefix:   /say
