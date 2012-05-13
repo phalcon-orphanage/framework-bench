@@ -5,7 +5,7 @@ framework:
         enabled: true
     router:        { resource: "%kernel.root_dir%/config/routing.yml" }
     validation:    { enabled: true, enable_annotations: true }
-    templating:    { engines: ['twig', 'php'] }
+    templating:    { engines: ['php'] }
     session:
         default_locale: en
         lifetime:       3600
@@ -36,6 +36,3 @@ assetic:
             apply_to: "\.sass$"
         yui_css:
             jar: %kernel.root_dir/java/yui-compressor-2.4.6.jar
-    twig:
-        functions:
-            yui_css: { output: css/*.css }

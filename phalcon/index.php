@@ -7,6 +7,7 @@ try {
 			'controllersDir' => 'app/controllers/',
 			'modelsDir' => 'app/models/',
 			'viewsDir' => 'app/views/',
+			'baseUri' => '/bench/phalcon/',
 		)
 	));
 
@@ -18,4 +19,3 @@ try {
 catch(Phalcon_Exception $e){
 	echo 'PhalconException: '.$e->getMessage(), PHP_EOL;
 }
-
