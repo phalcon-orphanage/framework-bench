@@ -1,0 +1,7 @@
+2012-02-28 21:33:32 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/bench/cake/app/View/Say/hello.ctp" is missing.
+#0 /Applications/MAMP/htdocs/bench/cake/lib/Cake/View/View.php(360): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/bench/cake/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/bench/cake/lib/Cake/Routing/Dispatcher.php(111): Controller->render()
+#3 /Applications/MAMP/htdocs/bench/cake/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(SayController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/bench/cake/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
