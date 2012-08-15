@@ -3,7 +3,12 @@
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
 
-_say:
-    resource: "@AcmeDemoBundle/Controller/SayController.php"
-    type:     annotation
-    prefix:   /say
+#_say:
+#    resource: "@AcmeDemoBundle/Controller/SayController.php"
+#    type:     annotation
+#    prefix:   /say
+
+_say2:
+    pattern:  /say/hello/
+    defaults:
+        _controller: AcmeDemoBundle:Say:hello
