@@ -1,7 +1,8 @@
 <?php
 
-class SayController extends Controller
+class SayController extends CController
 {
+	public $layout='//layouts/column1';
 
 	/**
 	 * This is the default 'index' action that is invoked
