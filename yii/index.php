@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../yii-1.1.10.r3566/framework/yiilite.php';
+$yii=dirname(__FILE__).'/../yii-1.1.12.b600af/framework/yiilite.php';
 //$config=dirname(__FILE__).'/protected/config/main.php';
 $config=array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'protected',
