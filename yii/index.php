@@ -5,7 +5,6 @@ $yii=dirname(__FILE__).'/../yii-1.1.10.r3566/framework/yiilite.php';
 //$config=dirname(__FILE__).'/protected/config/main.php';
 $config=array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'protected',
-	'import'=>array('application.components.*'),
 );
 
 // remove the following lines when in production mode
