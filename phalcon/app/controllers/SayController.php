@@ -1,8 +1,11 @@
 <?php
 
-class SayController extends Phalcon_Controller {
+class SayController extends \Phalcon\Mvc\Controller
+{
 
-	public function helloAction(){
+	public function helloAction()
+	{
+
 	}
 
 }
