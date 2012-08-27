@@ -11,3 +11,5 @@ $kernel->loadClassCache();
 //$kernel = new AppCache($kernel);
 $kernel->handle(Request::createFromGlobals())->send();
 
+//echo count(get_included_files());
+//echo memory_get_usage(true)/1024/1024;
