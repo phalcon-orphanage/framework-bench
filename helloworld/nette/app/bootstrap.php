@@ -17,7 +17,7 @@ $configurator = new Nette\Config\Configurator;
 
 // Enable Nette Debugger for error visualisation & logging
 //$configurator->setDebugMode($configurator::AUTO);
-$configurator->enableDebugger(__DIR__ . '/../log',Nette\Diagnostics\Debugger::PRODUCTION);
+$configurator->enableDebugger(Nette\Diagnostics\Debugger::PRODUCTION,__DIR__ . '/../log');
 
 // Enable RobotLoader - this will load all classes automatically
 $configurator->setTempDirectory(__DIR__ . '/../temp');
