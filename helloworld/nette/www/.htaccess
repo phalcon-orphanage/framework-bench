@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteBase /framework-bench/helloworld/nette/www/
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule !\.(js|ico|gif|jpg|png|css)$ index.php [L]
+
+    <IfModule mod_env.c>
+        SetEnv NETTE_HTACCESS ok
+    </IfModule>
+
+</IfModule>

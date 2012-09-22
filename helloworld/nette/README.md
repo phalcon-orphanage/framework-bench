@@ -1,23 +1,42 @@
-# Nette Hello Word Benchmark
+# Nette Framework Hello World Benchmark
 
 
 ## Setup
 
-1) Set directory permissions
-2) Warm-up cache
+* Set the `RewriteBase` directive in the `www/.htaccess` file if you are running in sub-folder:
+
+```
+RewriteBase /framework-bench/helloworld/nette/www/
+```
+
+* Set the log directory and the temporary files directory to be writable by the apache process:
 
 ```
 $ chmod go+w -R log/ temp/
-$ ab http://localhost/bench/nette/www/index.php
 ```
+
+* Warm-up the cache:
+
+```
+$ ab http://localhost/framework-bench/helloworld/nette/www/index.php?presenter=Say&action=hello
+```
+
+or if you are using `mod_rewrite`:
+
+```
+$ ab http://localhost/framework-bench/helloworld/nette/www/say/hello
+```
+
+
 
 ## Run
 
 ```
-$ ab -n 1000 -c 5 http://localhost/bench/nette/www/index.php
+$ ab -n 1000 -c 5 http://localhost/framework-bench/helloworld/nette/www/index.php?presenter=Say&action=hello
 ```
 
-## Links
+or if you are using `mod_rewrite`:
 
-* [github.com/nette](https://github.com/nette/nette)
-* [nette.org](http://nette.org)
+```
+$ ab -n 1000 -c 5 http://localhost/framework-bench/helloworld/nette/www/say/hello
+```
