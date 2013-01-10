@@ -33,4 +33,3 @@ unset($web);
 // --------------------------------------------------------------
 require path('sys').'laravel.php';
 
-echo memory_get_usage(true)/1024/1024;

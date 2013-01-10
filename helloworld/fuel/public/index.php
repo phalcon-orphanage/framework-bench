@@ -62,5 +62,3 @@ catch (HttpNotFoundException $e)
 //);
 
 $response->send(true);
-
-echo count(get_included_files());
