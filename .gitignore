@@ -1,1 +1,2 @@
-Symfony/app/cache/
+/Symfony/app/cache/
+/.idea/
