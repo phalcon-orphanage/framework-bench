@@ -7,7 +7,7 @@ use Nette\Application\Routers\SimpleRouter;
 require __DIR__ . '/../libs/nette.min.php';
 
 $configurator = new Configurator();
-$configurator->setDebugMode(true);
+$configurator->setDebugMode(FALSE);
 $configurator->enableDebugger(__DIR__ . '/../log');
 $configurator->setTempDirectory(__DIR__ . '/../temp');
 
