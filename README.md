@@ -1,4 +1,3 @@
-
 Framework Benchmark
 ------------------
 
@@ -8,5 +7,5 @@ Benchmarking below shows how efficient Phalcon is when compared with other tradi
 Results & Information
 ---------------------
 
-Visit http://phalconphp.com/documentation/benchmark for more information
+Visit http://docs.phalconphp.com/en/latest/reference/benchmark.html for more information
 
