@@ -4,7 +4,14 @@ use Nette\Config\Configurator;
 use Nette\Application\Routers\Route;
 use Nette\Application\Routers\SimpleRouter;
 
-require __DIR__ . '/../libs/nette.min.php';
+require __DIR__ . '/../vendor/nette/nette/Nette/loader.php';
+
+if (is_file($cache = __DIR__ . '/../temp/classes.cache.php')) {
+	require $cache;
+} else {
+	require __DIR__ . '/ClassCacheBuilder.php';
+	ClassCacheBuilder::customBuild($cache);
+}
 
 $configurator = new Configurator();
 $configurator->setDebugMode(FALSE);
@@ -13,10 +20,6 @@ $configurator->setTempDirectory(__DIR__ . '/../temp');
 
 $container = $configurator->createContainer();
 
-if (isset($_SERVER['REDIRECT_NETTE_HTACCESS'])) {
-    $container->router[] = new Route('<presenter>/<action>', 'Default:default');
-} else {
-    $container->router[] = new SimpleRouter('Default:default');
-}
+$container->router[] = new SimpleRouter('Default:default');
 
 $container->application->run();
