@@ -6,7 +6,7 @@ class SayController extends CController
 
 	public function actionHello()
 	{
-		$this->render('hello');
+		die($this->render('hello'));
 	}
 
 }
