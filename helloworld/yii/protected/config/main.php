@@ -16,6 +16,9 @@ return array(
 
 	// application components
 	'components'=>array(
+		'cache'=>array(
+			'class'=>'system.caching.CApcCache',
+		),
 		'user'=>array(
 			'allowAutoLogin'=>true,
 		),
