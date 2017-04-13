@@ -1,2 +1,0 @@
-_hello:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
