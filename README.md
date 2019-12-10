@@ -14,5 +14,5 @@ If you have suggestions that we could implement to make this benchmark as realis
 Results & Information
 ---------------------
 
-Visit http://blog.phalcon.io/post/benchmarking-phalcon for more information.
+Visit https://blog.phalcon.io/post/benchmarking-phalcon for more information.
 
